@@ -40,3 +40,8 @@ const myfunction = function(){
     console.log("Hello Aarya")
 }
 myfunction();
+
+
+// +++++++++++++++++++++++++++++++++++++++++
+// Data conversion
+// Number, String, Boolean - you can convert String into number or vise versa
