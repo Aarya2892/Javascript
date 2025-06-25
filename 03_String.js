@@ -3,6 +3,11 @@
 const name = "Aarya"
 const age = 21
 
+// you can define the string in this way also
+const schoolName = new String("Patil School")
+console.log(schoolName);
+
+
 // to concatination please used modern way 
 console.log(`Hello everyone my name is ${name} and I'm ${age} years old`)
 
