@@ -81,4 +81,4 @@ function addOne(num){
 const two = function addTwo(num){
     return num+2;
 }
-console.log(two(8));
+console.log(two(8))
