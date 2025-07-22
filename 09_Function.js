@@ -64,3 +64,21 @@ function returnSecondValue(getArray){
 }
 // console.log(returnSecondValue(myArray))
 console.log(returnSecondValue([200, 400, 500]))
+
+
+
+
+// +++++++++++++++++++++ interesting +++++++++++++++++++++++++++++++
+// Hoisting
+
+console.log(addOne(5));
+
+function addOne(num){
+    return num+1;
+}
+
+// console.log(two(7)) if you store the function in variable then you are not able to access it before declaring it
+const two = function addTwo(num){
+    return num+2;
+}
+console.log(two(8));
