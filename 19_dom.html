@@ -12,11 +12,26 @@
 </head>
 <body class="bg-black">
     <div>
-        <h1 id="title" class="heading">DOM learning on chai aur code</h1>
+        <h1 id="title" class="heading">DOM learning on chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem, ipsum dolor.</h2>
         <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>
 </body>
 </html>
+
+<!-- 
+1.getElementById
+2.getElementByClass
+3.querySelector
+ -->
 
 
 
@@ -53,7 +68,46 @@ title.style.borderRadius = "10px"
 title.style.padding = "10px"
 '10px'
 
+
+title.innerHTML
+'DOM learning on chai aur code'
+
+title.innerText
+'DOM learning on chai aur code'
+
 title.textContent
 'DOM learning on chai aur code'
 
+diff between innerText and textCOntent
+title.innerText
+'DOM learning on chai aur code'
+title.textContent
+'DOM learning on chai aur code test text'
+
+title.innerHTML
+'DOM learning on chai aur code <span style="display: none;">test text</span>'
+
+document.querySelector('.heading')
+document.querySelector('#title')
+document.querySelector('input[type="password"]')
+
+const myul = document.querySelector('ul')
+myul.querySelector('li')
+
+
+const turngreen = document.querySelector('li')
+turngreen.style.backgroundColor = "green"
+turngreen.innerHTML
+'one'
+turngreen.innerText = "five"
+'five'
+
+
+//whenever you are working on the nodelist use forEach loop
+const templiList = document.querySelectorAll('li')
+templiList[0].style.color = "green"
+
+templiList.forEach((item)=>{
+    return item.style.backgroundColor = "green"
+})
 -->
