@@ -34,7 +34,6 @@
  -->
 
 
-
 <!-- document.getElementById('title')
 <h1 id=​"title" class=​"heading">​DOM learning on chai aur code​</h1>​
 
@@ -110,4 +109,14 @@ templiList[0].style.color = "green"
 templiList.forEach((item)=>{
     return item.style.backgroundColor = "green"
 })
--->
+
+//whenever you are working wiht the HTMLCOllection you need to convert it  
+
+ const tempClassList = document.getElementsByClassName('list-item')
+ const myconvertedArray = Array.from(tempClassList)
+ myconvertedArray
+
+ myconvertedArray.forEach((item)=>{
+    return item.style.color = "orange"
+})
+!--  -->
