@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Adding new element</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+   const div = document.createElement('div')
+   console.log(div);
+   div.className = "main"
+   div.id = Math.round(Math.random()*10 + 1 )
+   div.setAttribute("title", "generated title")
+   div.style.backgroundColor = "green"
+   div.style.padding = "12px"
+//    div.innerHTML = "DOM Learning"
+   const addText = document.createTextNode("DOM Learning")
+   div.appendChild(addText)
+   document.body.appendChild(div)
+
+// const div1 = document.createElement('div');
+// div1.style.color ="white"
+// div1.style.backgroundColor = "orange"
+// const text = document.createTextNode("New div")
+// div.appendChild(text)
+// document.body.appendChild(div1)
+</script>
+</script>
+</html>
