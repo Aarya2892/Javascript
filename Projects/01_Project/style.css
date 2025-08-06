@@ -22,8 +22,12 @@ nav a{
     border-radius: 5px;
     text-decoration: none;
     color: #212121;
-    background-color: #eee;
+    /* background-color: #eee; */
     margin-right: 30px;
+}
+nav a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
 }
 h1{
     font-size: 25px;
