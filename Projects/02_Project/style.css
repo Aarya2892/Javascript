@@ -1,0 +1,12 @@
+.Container{
+    text-align: center;
+}
+.form input{
+    border-radius: 5px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    border: solid 1px black;
+    border-radius: 8px;
+}
