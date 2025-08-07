@@ -1,0 +1,11 @@
+.clock{
+    text-align: center;
+}
+.time{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(177, 235, 235);
+    border-radius: 10px;
+    border: solid 5px aquamarine;
+}
