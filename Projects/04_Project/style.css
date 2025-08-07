@@ -1,0 +1,33 @@
+form{
+    text-align: center;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+.container h1{
+    color: rgb(54, 139, 173);
+    text-decoration: underline;
+}
+.container p{
+    font-size: 15px;
+    font-weight: 200;
+}
+label{
+    font-weight: bold;
+    font-style: italic;
+}
+.input{
+    border: solid 3px green;
+    border-radius: 5px;
+    text-align: center;
+}
+button{
+    margin-top: 15px;
+    background-color: rgb(219, 195, 241);
+    width: 100px;
+    height: 30px;
+    border: solid 2px purple;
+    border-radius: 7px;
+}
