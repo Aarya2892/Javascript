@@ -17,14 +17,21 @@
         <div class="container">
         <h1>Number guessing game</h1>
         <p>Try and guess a random number between 1 and 100.</p>
+        <p>Oyu have 10 attemps to guess the right number</p>
         <label>Guess the Number<br>
         <input type="text" class="input"></label><br>
 
-        <button> submit </button>
+        <button class="btn" id="sumbit"> submit </button>
         <div> 
             <h3>Random Number: <span id="randomNumber"></span></h3>
         </div>
         <div id="answer"></div>
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remianing: <span class="remaining"></span></p>
+            <p class="lowOrHi"></p>
+        </div>
+        <!-- <div id="reload"></div> -->
     </div>
     </form>
 

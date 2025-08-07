@@ -22,7 +22,7 @@ label{
     border-radius: 5px;
     text-align: center;
 }
-button{
+.btn{
     margin-top: 15px;
     background-color: rgb(219, 195, 241);
     width: 100px;
