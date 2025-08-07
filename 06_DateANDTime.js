@@ -5,7 +5,7 @@ console.log(typeof myDate) //object
 
 //to make the date in readable format
 console.log(myDate.toString())           //Mon jul 14 2025 16:21:26 GMT+0000
-console.log(myDate.toLocaleDateString()) //7/14/2025
+console.log(myDate.toLocaleDateString()) //7/14/2025 for time toLocalTimeString
 console.log(myDate.toDateString())       //Mon jul 14 2025
 
 
