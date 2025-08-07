@@ -20,10 +20,13 @@ form.addEventListener('submit', (e)=>{
       const info = document.querySelector("#info")
       if(bmi < 18.6){
          info.innerHTML = `<p>Under Weight</p>`
+         info.style.color = "red"
       }else if(bmi >=18.6 && bmi <= 24.9){
          info.innerHTML = `<p>Normal Range</p>`
+         info.style.color = "green"
       }else if (bmi > 24.9){
          info.innerHTML = `<p>Overwight</p>`
+         info.style.color = "red"
       }
      }
 
