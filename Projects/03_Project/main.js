@@ -6,4 +6,4 @@ const time = document.querySelector('#time');
 setInterval(()=>{
    let currentTime = new Date();
    time.innerText = currentTime.toLocaleTimeString();
-},1000)
+},1000);
