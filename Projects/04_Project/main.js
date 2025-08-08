@@ -1,5 +1,5 @@
 
-const random = Math.round(Math.random()*100 +1);
+let random = Math.round(Math.random()*100 +1);
     // console.log(random);
 
 const submit = document.querySelector('#submit')
@@ -20,6 +20,7 @@ if(playGame){
   submit.addEventListener('click', (e)=>{
     e.preventDefault();
     const guess = parseInt(input.value)
+    console.log(guess)
     validateGuess(guess);
   })
 }
@@ -55,19 +56,36 @@ function checkGuess(guess){
 }
 function displayGuess(guess){
     input.value = ''
-    guessSlot.innerHTML += `${guess}`
+    guessSlot.innerHTML += `${guess} `
     numGuess++;
     remaining.innerHTML =`${11- numGuess}`
 }
 function displayMsg(msg){
-
+    lowOrHi.innerHTML =`<h2>${msg}</h2>`
 }
 function endGame(){
-    
+    input.value = ''
+    input.setAttribute('disabled', '')
+    p.classList.add('button')
+    p.innerHTML = `<h2 id="newGame"> Start New Game</h2>`
+    startOver.appendChild(p)
+    playGame = false;
+    newGame();
 }
 
 function newGame(){
-
+    const newGameButton = document.querySelector("#newGame")
+    newGameButton.addEventListener('click', ()=>{
+      random = parseInt(Math.random()*100 + 1);
+      prevGuess = []
+      numGuess = 1;
+      guessSlot.innerHTML = ''
+      remaining.innerHTML = `${11-numGuess}`;
+      input.removeAttribute('disabled')
+      startOver.removeChild(p)
+      
+      playGame = true;
+    })
 }
 
 
