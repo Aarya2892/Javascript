@@ -22,7 +22,7 @@ class Teacher extends user{
 }
 
 const Puma = new Teacher("Puma", "one@gmail.com")
-Puma.logMe();
-// console.log(Puma.createId());
+// Puma.logMe();
+console.log(Puma.createId());
 
 
