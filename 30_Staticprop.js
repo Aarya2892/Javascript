@@ -5,6 +5,7 @@ class user{
     logMe(){
         console.log(`User Name ${this.username}`);
     }
+    // static is restricted 
     static createId(){
         return `123`
     }
